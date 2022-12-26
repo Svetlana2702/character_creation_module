@@ -1,6 +1,7 @@
 from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
+
 def attack(char_name: str, char_class: str) -> str:
     """Подсчёт количества атак противника."""
     if char_class == 'warrior':
@@ -102,6 +103,5 @@ if __name__ == '__main__':
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
     print(start_training(char_name, char_class))
-
 
 main()
